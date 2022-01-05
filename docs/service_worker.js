@@ -7,7 +7,7 @@ var urlsToCache = [
 //インストール
 
 self.addEventListener('install',function(event){
-    event.waitUntill(
+    event.waitUntil(
         caches
             .open(CACHE_NAME)
             .then(function(cache){
