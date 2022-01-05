@@ -8,14 +8,15 @@ if('serviceWorker' in navigator){
         });
 }
 
-var num = 0;
+var num = 1;
 var app = new Vue({
     el: '#app',
     data: {
-        message: 'Hello vue!:'+num + '回目'
+        message: 'Hello vue!'
     },
     methods: {
         reverseMessage: function(){
+            this.message = 'Hello vue!:' + num + '回目';
             num++;
         }
     }
