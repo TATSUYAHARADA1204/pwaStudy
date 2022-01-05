@@ -21,10 +21,11 @@ var num = 0;
 var app = new Vue({
     el: '#app',
     data: {
-        message: 'Hello vue!'+num
+        message: 'Hello vue!:'+num + '回目'
     },
     methods: {
         reverseMessage: function(){
+            num++;
         }
     }
 });
