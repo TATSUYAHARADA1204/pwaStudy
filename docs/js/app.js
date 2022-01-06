@@ -27,6 +27,7 @@ var timerStart = new Vue({
     data: {
         min: 0,
         sec: 0,
+        timerformat: '',
         timerOn: false,
         timerObj: null,
     } ,
@@ -38,10 +39,9 @@ var timerStart = new Vue({
                 this.sec=0;
                 this.min++;
             }
-
+            this.timerformat = this.min+'分' + this.sec + '秒'
         },
         start: function(){
-            let self = this;
             this.timerObj = setInterval(function(){ self.count()},1000)
             this.timerOn=true;
         },
