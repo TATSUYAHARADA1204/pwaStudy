@@ -16,6 +16,7 @@ var app = new Vue({
     },
     methods: {
         reverseMessage: function(){
+            this.message = ''
             this.message = 'Hello vue' + num + '回目'
             num++
         }
