@@ -23,7 +23,7 @@ var app = new Vue({
 });
 
 var timerStart = new Vue({
-    name: 'timer',
+    el: '#timer',
     data: {
         min: 0,
         sec: 0,
