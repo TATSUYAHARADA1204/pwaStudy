@@ -1,7 +1,7 @@
 
 var CACHE_NAME = 'pwa-sample-caches';
 var urlsToCache = [
-    '/tatsuyaharada1204.github.io/',
+    '/tatsuyaharada1204.github.io/pwaStudy',
 ];
 
 //インストール
