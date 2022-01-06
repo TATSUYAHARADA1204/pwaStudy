@@ -1,4 +1,9 @@
 #app{
-    border: solid;
-    border-color: #031de2;
+    border: 2px solid;
+    border-color: #55FFFF;
+}
+
+#timer{
+    border: 2px solid;
+    border-color: #FFFF55;
 }
