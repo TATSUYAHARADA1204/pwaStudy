@@ -22,3 +22,33 @@ var app = new Vue({
         }
     }
 });
+
+var timerStart = new Vue({
+    name: 'timer',
+    data: {
+        min: 0,
+        sec: 0,
+        timerOn: false,
+        timerObj: null,
+    } ,
+    methods: {
+        count: function(){
+            if(this.sec <59){
+                this.sec++;
+            }else{
+                this.sec=0;
+                this.min++;
+            }
+            
+        },
+        start: function(){
+            let self = this;
+            this.timerObj = setInterval(function(){ self.count()},1000)
+            this.timerOn=true;
+        },
+        stop: function(){
+            clearInterval(this.timerObj);
+            this.timerOn=false;
+        },
+    }
+})
