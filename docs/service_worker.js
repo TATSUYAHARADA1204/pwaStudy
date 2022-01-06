@@ -12,7 +12,7 @@ importScripts('https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox
 
 workbox.precaching.precacheAndRoute([
     {
-        url: '/index.html',
+        url: '/pwaStudy/index.html',
         revision: '12345'
     },
     {
