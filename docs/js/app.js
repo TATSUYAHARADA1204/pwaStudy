@@ -16,7 +16,6 @@ var app = new Vue({
     },
     methods: {
         reverseMessage: function(){
-            this.message = ''
             this.message = 'Hello vue' + num + '回目'
             num++
         }
@@ -39,7 +38,7 @@ var timerStart = new Vue({
                 this.sec=0;
                 this.min++;
             }
-            
+
         },
         start: function(){
             let self = this;
