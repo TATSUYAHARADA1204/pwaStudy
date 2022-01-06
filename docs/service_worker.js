@@ -16,11 +16,11 @@ workbox.precaching.precacheAndRoute([
         revision: '12345'
     },
     {
-        url: '/css/app.css',
+        url: '/pwaStudy/css/app.css',
         revision: '12345'
     },
     {
-        url: '/js/app.js',
+        url: '/pwaStudy/js/app.js',
         revision: '12345'
     },
 ])
