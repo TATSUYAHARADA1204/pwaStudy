@@ -39,7 +39,7 @@ var timerStart = new Vue({
                 this.sec=0;
                 this.min++;
             }
-            this.timerformat = this.min+'分' + this.sec + '秒'
+            this.timerFmt = this.min+'分' + this.sec + '秒'
         },
         start: function(){
             this.timerObj = setInterval(this.count,1000)
