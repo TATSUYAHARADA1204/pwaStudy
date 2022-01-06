@@ -27,7 +27,7 @@ var timerStart = new Vue({
     data: {
         min: 0,
         sec: 0,
-        timerformat: '',
+        timerFmt: 'Startを押して下さい',
         timerOn: false,
         timerObj: null,
     } ,
