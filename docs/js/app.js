@@ -8,6 +8,8 @@ if('serviceWorker' in navigator){
         });
 }
 
+
+
 var num = 1;
 var app = new Vue({
     el: '#app',
@@ -51,3 +53,12 @@ var timerStart = new Vue({
         },
     }
 })
+
+if (typeof window.localStorage !== 'undefined'){
+  /// localStorageに対応済み
+  console.log('localStorage対応済み！');
+}
+else{
+  /// localStorageには未対応
+  console.error('localStorage未対応！');
+}
